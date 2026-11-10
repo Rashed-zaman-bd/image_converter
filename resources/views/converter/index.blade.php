@@ -83,14 +83,9 @@
         <!-- Header -->
         <header class="mb-8 sm:mb-10 lg:mb-12">
             <div class="flex items-center gap-3">
-                <span class="grid h-10 w-10 place-items-center rounded-xl bg-ink text-white">
-                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
-                        <rect x="3" y="4" width="18" height="16" rx="3" />
-                        <circle cx="9" cy="10" r="1.6" />
-                        <path d="m4 18 5-5 4 4 3-3 4 4" />
-                    </svg>
-                </span>
+                <div class="grid h-12 w-12 place-items-center">
+                    <img src="/images/logo.png" alt="">
+                </div>
                 <span class="font-display text-lg font-semibold tracking-tight">Image Converter</span>
             </div>
 
