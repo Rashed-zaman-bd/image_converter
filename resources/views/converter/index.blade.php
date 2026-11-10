@@ -80,15 +80,11 @@
 
     <main class="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-10 lg:py-14">
 
-        <!-- Header -->
-        <header class="mb-8 sm:mb-10 lg:mb-12">
-            <div class="flex items-center gap-3">
-                <div class="grid h-12 w-12 place-items-center">
-                    <img src="/images/logo.png" alt="">
-                </div>
-                <span class="font-display text-lg font-semibold tracking-tight">Image Converter</span>
-            </div>
+        @include('partials.navbar')
 
+        <!-- Header -->
+        <header class="mb-8 sm:mb-10 lg:mb-12 p-4">
+            
             <h1 class="mt-6 max-w-2xl font-display text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">
                 Convert images to WebP, AVIF, PNG or JPG
             </h1>
@@ -98,7 +94,7 @@
         </header>
 
         <!-- Steps -->
-        <nav aria-label="Progress" class="mb-6 sm:mb-8">
+        <nav aria-label="Progress" class="mb-6 sm:mb-8 p-4">
             <ol id="steps" class="grid grid-cols-4 gap-2 sm:gap-4">
                 @foreach (['Upload', 'Select format', 'Convert', 'Download'] as $step)
                     <li data-step="{{ $loop->index }}" class="flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
@@ -122,7 +118,7 @@
             method="POST"
             enctype="multipart/form-data"
             id="converterForm"
-            class="grid grid-cols-1 gap-5 lg:grid-cols-5 lg:gap-6">
+            class="grid grid-cols-1 gap-5 p-4 lg:grid-cols-5 lg:gap-6">
 
             @csrf
 
@@ -283,6 +279,8 @@
             </aside>
 
         </form>
+
+        @include('partials.image-tools')
 
         <!-- Footer -->
         <footer class="mt-10 text-center text-sm text-slate-500">
