@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Online Image Converter</title>
+    <title>Free Image Converter</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,7 +86,7 @@
         <header class="mb-8 sm:mb-10 lg:mb-12 p-4">
             
             <h1 class="mt-6 max-w-2xl font-display text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">
-                Convert images to WebP, AVIF, PNG or JPG
+                Free Convert your images to WebP, AVIF, PNG or JPG
             </h1>
             <p class="mt-3 max-w-xl text-base text-slate-600 sm:text-lg">
                 Drop in your images, pick a format and download. Files stay private and are never stored.
