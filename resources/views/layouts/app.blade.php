@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>@yield('title', 'Image Tools')</title>
+    <meta name="description" content="@yield('description', 'Free online image tools: convert, resize, crop, compress and more.')">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,13 +43,19 @@
             background-size: 24px 24px;
         }
 
+        .drop-area,
+        .drop-icon {
+            transition: transform .2s ease, border-color .2s ease, background-color .2s ease;
+        }
+
         .drop-area.dragover {
             border-color: #5b5bf0;
             background-color: #eef0ff;
+            transform: scale(1.005);
         }
 
-        .drop-area {
-            transition: border-color .2s ease, background-color .2s ease;
+        .drop-area.dragover .drop-icon {
+            transform: translateY(-4px);
         }
 
         @keyframes spin {
@@ -61,6 +68,7 @@
 
         @media (prefers-reduced-motion: reduce) {
             .drop-area,
+            .drop-icon,
             .spinner {
                 transition: none;
                 animation: none;
@@ -82,7 +90,11 @@
         @include('partials.image-tools')
 
         <footer class="mt-10 text-center text-sm text-slate-500">
-            Free online image tools.
+            @hasSection('footer')
+                @yield('footer')
+            @else
+                Free online image tools.
+            @endif
         </footer>
 
     </main>

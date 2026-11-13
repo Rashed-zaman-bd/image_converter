@@ -1,4 +1,4 @@
-@extends('layouts.tool')
+@extends('layouts.app')
 
 @section('title', 'Image Resizer - Resize an image to any size')
 

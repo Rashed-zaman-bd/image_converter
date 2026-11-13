@@ -1,4 +1,4 @@
-@extends('layouts.tool')
+@extends('layouts.app')
 
 @section('title', 'Image Enlarger - Make your images bigger')
 

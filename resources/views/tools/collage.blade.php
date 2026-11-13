@@ -1,4 +1,4 @@
-@extends('layouts.tool')
+@extends('layouts.app')
 
 @section('title', 'Collage Maker - Create a photo collage')
 

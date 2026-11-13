@@ -1,4 +1,4 @@
-@extends('layouts.tool')
+@extends('layouts.app')
 
 @section('title', 'Color Picker - Pick a color from your image')
 

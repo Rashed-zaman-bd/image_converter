@@ -1,4 +1,4 @@
-@extends('layouts.tool')
+@extends('layouts.app')
 
 @section('title', 'Image Compressor - Reduce image file size')
 
