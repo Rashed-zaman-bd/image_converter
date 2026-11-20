@@ -39,7 +39,7 @@
     <style>
         body {
             background-color: #f6f7fb;
-            background-image: radial-gradient(#d5d9e8 1px, transparent 1px);
+            background-image: radial-gradient(#b4b9cc 1px, transparent 1px);
             background-size: 24px 24px;
         }
 
@@ -49,7 +49,7 @@
         }
 
         .drop-area.dragover {
-            border-color: #5b5bf0;
+            border-color: #f05bc8;
             background-color: #eef0ff;
             transform: scale(1.005);
         }
