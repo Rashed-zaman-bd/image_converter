@@ -1,5 +1,6 @@
 {{-- resources/views/partials/dropzone.blade.php
      Optional variables: $name, $multiple, $accept, $title, $hint --}}
+     
 <input type="file"
     name="{{ $name ?? 'image' }}{{ !empty($multiple) ? '[]' : '' }}"
     id="imageInput"
