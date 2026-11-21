@@ -10,7 +10,6 @@
         ['name' => 'Collage Maker',    'url' => url('/collage-maker'),    'desc' => 'Create a beautiful photo collage from your photos'],
     ];
 @endphp
-
 <section class="mt-8 rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_1px_0_rgba(20,23,51,.04),0_16px_40px_-16px_rgba(20,23,51,.15)] sm:p-8">
 
     <h2 class="font-display text-xl font-bold tracking-tight sm:text-2xl">
